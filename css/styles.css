@@ -17,3 +17,6 @@ body{
 .contact:hover {
   text-decoration: underline;
 }
+#data-col{
+  width:50%;
+}

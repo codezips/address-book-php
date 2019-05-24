@@ -49,12 +49,11 @@ if(isset($_POST['delete'])){
     <title>My Address book</title>
   </head>
   <body>
-    <div class="container text-center col-lg-6 offset-lg-3">
+    <div class="container text-center col-lg-12">
       <h2>My Address Book</h2>
-      <div class="row">
-        <div class="col-lg-12 text-center offset-lg-3">
+        <div class="col-lg-12 text-center">
           <h3>Add a new Address List</h3>
-          <form id="new-contact" method="post">
+          <form method="post">
             <div class="form-group">
               <label for="new-first-name">Enter First name</label>
               <input type="text" name="firstname" class="form-control" id="new-first-name">
@@ -71,11 +70,13 @@ if(isset($_POST['delete'])){
             <input type="submit" name="submit" class="btn btn-primary">
           </form>
 
+          </div>
+        </div>
+
+          <div class="container col-lg-5 text-center" id="data-col">
           <h2>My Contacts:</h2>
-          <ul class="list-group" id="contacts">
+          <ul class="list-group">
           </ul>
-          <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 text-center">
-            <div>
                 <table class="table table-hovered">
                   <tr>
                     <th>Firstname</th>
@@ -97,12 +98,7 @@ if(isset($_POST['delete'])){
                 }
                ?>
              </table>
-            </div>
-          </div>
-
         </div>
-      </div>
-      <footer><p>My Address Book made with Javascript</p></footer>
-    </div>
+      <footer class="text-center"><p>My Address Book made with Javascript</p></footer>
   </body>
 </html>
